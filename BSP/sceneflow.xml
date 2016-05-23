@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SceneFlow id="" name="default" comment="" hideLocalVar="false" hideGlobalVar="false" modifDate="Mo, 23 Mai 2016 19:53:23" start="N4;" context="" package="" xmlns="xml.sceneflow.dfki.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xml.sceneflow.dfki.de res/xsd/sceneflow.xsd">
+  <Define>
+  </Define>
+  <Declare>
+    <Variable type="Int" name ="Beka">
+      <Int value="0"/>
+    </Variable>
+  </Declare>
+  <Commands>
+  </Commands>
+  <LocalVariableBadge>
+    <Position xPos="10" yPos="10"/>
+  </LocalVariableBadge>
+  <GlobalVariableBadge>
+    <Position xPos="10" yPos="10"/>
+  </GlobalVariableBadge>
+  <Node id="N4" name="N4" history="false">
+    <Define>
+    </Define>
+    <Declare>
+    </Declare>
+    <Commands>
+      <PlaySceneGroup>
+        <String><![CDATA[Hallo]]></String>
+      </PlaySceneGroup>
+    </Commands>
+    <CEdge target="N1" start="">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="63" yPos="128" ctrlXPos="170" ctrlYPos="79"/>
+          <ControlPoint xPos="319" yPos="53" ctrlXPos="231" ctrlYPos="118"/>
+        </Connection>
+      </Graphics>
+      <Eq>
+        <Variable name="Beka"/>
+        <Int value="1"/>
+      </Eq>
+    </CEdge>
+    <CEdge target="N2" start="">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="66" yPos="141" ctrlXPos="173" ctrlYPos="151"/>
+          <ControlPoint xPos="316" yPos="141" ctrlXPos="228" ctrlYPos="151"/>
+        </Connection>
+      </Graphics>
+      <Eq>
+        <Variable name="Beka"/>
+        <Int value="2"/>
+      </Eq>
+    </CEdge>
+    <CEdge target="N3" start="">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="63" yPos="154" ctrlXPos="170" ctrlYPos="222"/>
+          <ControlPoint xPos="319" yPos="328" ctrlXPos="231" ctrlYPos="279"/>
+        </Connection>
+      </Graphics>
+      <Eq>
+        <Variable name="Beka"/>
+        <Int value="3"/>
+      </Eq>
+    </CEdge>
+    <Graphics>
+      <Position xPos="16" yPos="116"/>
+    </Graphics>
+  </Node>
+  <Node id="N1" name="N1" history="false">
+    <Define>
+    </Define>
+    <Declare>
+    </Declare>
+    <Commands>
+      <PlaySceneGroup>
+        <String><![CDATA[Text1]]></String>
+      </PlaySceneGroup>
+    </Commands>
+    <TEdge target="N5" start="" timeout="2000">
+    <Graphics>
+      <Connection>
+        <ControlPoint xPos="363" yPos="54" ctrlXPos="470" ctrlYPos="122"/>
+        <ControlPoint xPos="569" yPos="128" ctrlXPos="481" ctrlYPos="79"/>
+      </Connection>
+    </Graphics>
+    </TEdge>
+    <Graphics>
+      <Position xPos="316" yPos="16"/>
+    </Graphics>
+  </Node>
+  <Node id="N2" name="N2" history="false">
+    <Define>
+    </Define>
+    <Declare>
+    </Declare>
+    <Commands>
+      <PlaySceneGroup>
+        <String><![CDATA[Text2]]></String>
+      </PlaySceneGroup>
+    </Commands>
+    <TEdge target="N5" start="" timeout="2000">
+    <Graphics>
+      <Connection>
+        <ControlPoint xPos="366" yPos="141" ctrlXPos="473" ctrlYPos="151"/>
+        <ControlPoint xPos="566" yPos="141" ctrlXPos="478" ctrlYPos="151"/>
+      </Connection>
+    </Graphics>
+    </TEdge>
+    <Graphics>
+      <Position xPos="316" yPos="116"/>
+    </Graphics>
+  </Node>
+  <Node id="N3" name="N3" history="false">
+    <Define>
+    </Define>
+    <Declare>
+    </Declare>
+    <Commands>
+      <PlaySceneGroup>
+        <String><![CDATA[Text3]]></String>
+      </PlaySceneGroup>
+    </Commands>
+    <TEdge target="N5" start="" timeout="2000">
+    <Graphics>
+      <Connection>
+        <ControlPoint xPos="363" yPos="328" ctrlXPos="470" ctrlYPos="279"/>
+        <ControlPoint xPos="569" yPos="153" ctrlXPos="481" ctrlYPos="218"/>
+      </Connection>
+    </Graphics>
+    </TEdge>
+    <Graphics>
+      <Position xPos="316" yPos="316"/>
+    </Graphics>
+  </Node>
+  <Node id="N5" name="N5" history="false">
+    <Define>
+    </Define>
+    <Declare>
+    </Declare>
+    <Commands>
+    </Commands>
+    <EEdge target="N4" start ="">
+    <Graphics>
+      <Connection>
+        <ControlPoint xPos="567" yPos="147" ctrlXPos="377" ctrlYPos="260"/>
+        <ControlPoint xPos="65" yPos="147" ctrlXPos="294" ctrlYPos="257"/>
+      </Connection>
+    </Graphics>
+    </EEdge>
+    <Graphics>
+      <Position xPos="566" yPos="116"/>
+    </Graphics>
+  </Node>
+  <ClassPath>
+  </ClassPath>
+  <InitContext></InitContext>
+</SceneFlow>

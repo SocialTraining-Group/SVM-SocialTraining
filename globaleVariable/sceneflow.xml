@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SceneFlow id="" name="default" comment="" hideLocalVar="false" hideGlobalVar="false" modifDate="Mo, 23 Mai 2016 14:59:07" start="N1;" context="" package="" xmlns="xml.sceneflow.dfki.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xml.sceneflow.dfki.de res/xsd/sceneflow.xsd">
+  <Define>
+  </Define>
+  <Declare>
+    <Variable type="Int" name ="Beka">
+      <Int value="0"/>
+    </Variable>
+  </Declare>
+  <Commands>
+  </Commands>
+  <LocalVariableBadge>
+    <Position xPos="53" yPos="40"/>
+  </LocalVariableBadge>
+  <GlobalVariableBadge>
+    <Position xPos="10" yPos="10"/>
+  </GlobalVariableBadge>
+  <Node id="N1" name="N1" history="false">
+    <Define>
+    </Define>
+    <Declare>
+    </Declare>
+    <Commands>
+      <PlaySceneGroup>
+        <String><![CDATA[GUI]]></String>
+      </PlaySceneGroup>
+    </Commands>
+    <TEdge target="N2" start="" timeout="1000">
+    <Graphics>
+      <Connection>
+        <ControlPoint xPos="233" yPos="198" ctrlXPos="285" ctrlYPos="198"/>
+        <ControlPoint xPos="513" yPos="198" ctrlXPos="460" ctrlYPos="198"/>
+      </Connection>
+    </Graphics>
+    </TEdge>
+    <Graphics>
+      <Position xPos="163" yPos="163"/>
+    </Graphics>
+  </Node>
+  <Node id="N2" name="N2" history="false">
+    <Define>
+    </Define>
+    <Declare>
+    </Declare>
+    <Commands>
+    </Commands>
+    <EEdge target="N1" start ="">
+    <Graphics>
+      <Connection>
+        <ControlPoint xPos="514" yPos="207" ctrlXPos="395" ctrlYPos="238"/>
+        <ControlPoint xPos="232" yPos="207" ctrlXPos="351" ctrlYPos="238"/>
+      </Connection>
+    </Graphics>
+    </EEdge>
+    <Graphics>
+      <Position xPos="513" yPos="163"/>
+    </Graphics>
+  </Node>
+  <UserCommands>
+    <UserCommand name="newCommand" classname ="java.lang.System.out" method="append">
+      <Argument name="text" type="java.lang.CharSequence"/>
+      <Argument name="Arg1" type="int"/>
+      <Argument name="Arg2" type="int"/>
+    </UserCommand>
+  </UserCommands>
+  <ClassPath>
+  </ClassPath>
+  <InitContext></InitContext>
+</SceneFlow>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="GlobaleVariable">
+  <Plugins>
+    <Plugin type="device" name="stickmanmarytts" class="de.dfki.vsm.xtension.stickmanmarytts.StickmanMaryttsExecutor" load="true">
+      <Feature key="smhost" val="127.0.0.1"/>
+      <Feature key="smport" val="8000"/>
+      <Feature key="showstickmanname" val="false"/>
+      <Feature key="mary.base" val="D:\marytts-5.1.2"/>
+    </Plugin>
+    <Plugin type="device" name="stickman" class="de.dfki.vsm.xtension.stickman.StickmanExecutor" load="true">
+      <Feature key="smhost" val="127.0.0.1"/>
+      <Feature key="smport" val="8000"/>
+      <Feature key="showstickmanname" val="false"/>
+    </Plugin>
+    <Plugin type="device" name="dialog" class="de.badnewscouch.vsm.xtension.dialog.DialogExecutor" load="true">
+      <Feature key="emotion1" val="Emotion1"/>
+      <Feature key="emotion2" val="Emotion2"/>
+      <Feature key="emotion3" val="Chaotisch"/>
+      <Feature key="emotion4" val="Detailverliebt"/>
+      <Feature key="emotion5" val="Stur"/>
+      <Feature key="emotion6" val="Keine"/>
+    </Plugin>
+  </Plugins>
+  <Agents>
+    <Agent name="susanne" device="stickmanmarytts">
+      <Feature key="voice" val="bits1-hsmm"/>
+    </Agent>
+    <Agent name="dgui" device="dialog">
+      <Feature key="log" val="log/qgui_values.txt"/>
+    </Agent>
+  </Agents>
+</Project>
